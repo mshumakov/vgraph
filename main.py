@@ -5,15 +5,20 @@ vGraph graph visualization tool for given sets of studied nodes.
 __author__ = """Maksim Shumakov (ms.profile.dev@gmail.com)"""
 
 import os
-
+import sys
 import pylab as plt
 from networkx import *
 
 # Project root
 os.getcwd()
 
+pathToData = './data/00.dat'
+
+if len(sys.argv) > 1:
+    pathToData = sys.argv[1]
+
 # Test sets of nodes for graph visualization.
-g = read_edgelist('data/00.dat')
+g = read_edgelist(pathToData)
 # Positions for all nodes
 pos = nx.spring_layout(g)
 
