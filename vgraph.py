@@ -1,12 +1,6 @@
 #!/usr/bin/env python
-"""
-vGraph graph visualization tool for given sets of studied nodes.
-"""
-__author__ = """Maksim Shumakov (ms.profile.dev@gmail.com)"""
 
-import os
-import sys
-import pylab as plt
+import os, sys, pylab as plt
 from networkx import *
 
 # Project root
