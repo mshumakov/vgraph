@@ -6,8 +6,16 @@ steps:
     image: python:3.6
     commands:
       - pip install -r requirements.txt
+    when:
+      event:
+        - push
+        - pull_request
+
+  - name: test
+    image: python:3.6
+    commands:
       - ./vgraph.py ./data/00.dat
-      - '[ -e graph.png ]'
+      - "[ -e graph.png ]"
     when:
       event:
         - push
