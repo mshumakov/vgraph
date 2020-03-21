@@ -3,6 +3,7 @@ venv
 
 # Ide
 .idea
+.vscode
 
 # Graph visualization
 *.png
