@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-import os, sys, pylab as plt
+import os
+import sys
+import pylab as plt
 from networkx import *
 
 # Project root
